@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Madimi+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Madimi+One&family=Oswald:wght@200..700&display=swap");
+
+html {
+    box-sizing: border-box;
+    font-family: "Oswald";
+    text-transform: uppercase;
+}
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    padding: 1rem;
+
+    h1 {
+        margin: 0;
+        text-transform: uppercase;
+        font-family: "Madimi One";
+        color: #032b43;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 5px #040403;
+    width: 500px;
+    margin: 0 auto;
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: calc(500px - 30px);
+
+        gap: 1rem;
+    }
+}
+.game-board {
+    background-color: rgb(234, 228, 228);
+    border: 1px solid black;
+
+    display: flex;
+    flex-wrap: wrap;
+    div {
+        border: 1px solid black;
+    }
+    div:hover {
+        background-color: green;
+    }
+}
+
+.btn.start-game {
+    background-color: #618b4a;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    font-family: "Anta";
+}
+.btn:hover {
+    background-color: rgb(106, 124, 106);
+    transition: all 0.3s ease-in-out;
+}
